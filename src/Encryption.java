@@ -7,19 +7,15 @@ import java.util.Scanner;
 public class Encryption {
     static int lenght = Data.ALPHABET_LENGHT;
     static char[] alphabet = Data.ALPHABET;
-
+    static int next;
+    static Scanner scanner = new Scanner(System.in);
+    static char[] buffer = new char[100000];
     public static void main(String[] args) throws IOException {
 
-
-
-        Scanner scanner = new Scanner(System.in);
-        int next;
-        char[] buffer = new char[100000];
         try (Reader reader = new FileReader(scanner.nextLine());
              Writer writer = new FileWriter(scanner.nextLine())) {
             int temp = scanner.nextInt();
             int key = temp <= lenght ? temp : temp - (lenght * (temp / lenght));
-            if (key <= 0) System.out.println("Ключ должен быть больше нуля");
             while (reader.ready()) {
                 int realLenght = reader.read(buffer);
                 for (int i = 0; i < realLenght; i++) {

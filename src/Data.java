@@ -1,5 +1,5 @@
 
-import java.io.Reader;
+
 
 public class Data {
     public static final char[] ALPHABET = {'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з',
@@ -9,8 +9,6 @@ public class Data {
             'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я'};
 
     public static final int ALPHABET_LENGHT = ALPHABET.length;
-
-
 
 
 
