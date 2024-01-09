@@ -1,7 +1,7 @@
-package src;
 
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Encryption {
@@ -26,22 +26,22 @@ public class Encryption {
                 for (int i = 0; i < realLenght; i++) {
                     next = 0;
                     while (buffer[i] != ALPHABET[next]) {
-                        if (next + key >= ALPHABET.length) {
-                            next = next + key - ALPHABET.length;
-                            break;
-                        }
-                        next++;
+                    if (next + key >= ALPHABET.length) {
+                        next = next + key - ALPHABET.length;
+                        break;
                     }
-                    switch (buffer[i]) {
-                        case 13 -> reader.skip(1);
-                        case 10 -> writer.write(10);
-                        default -> buffer[i] = ALPHABET[next + key];
-                    }
+                    next++;
                 }
-                writer.write(buffer, 0, realLenght);
+                switch (buffer[i]) {
+                    case 13 -> reader.skip(1);
+                    case 10 -> writer.write(10);
+                    default -> buffer[i] = ALPHABET[next + key];
+                }
             }
+            writer.write(buffer, 0, realLenght);
         }
     }
+}
 }
 
 

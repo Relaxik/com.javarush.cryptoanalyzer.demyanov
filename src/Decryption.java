@@ -1,6 +1,7 @@
-package src;
+
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Decryption {
@@ -25,6 +26,7 @@ public class Decryption {
                 int realLenght = reader.read(buffer);
                 for (int i = realLenght; i >= 0; i--) {
                     next = ALPHABET.length-1;
+
                     while (buffer[i] != ALPHABET[next]) {
                         if (next - key <= 0) {
                             next = ALPHABET.length + next - key;
