@@ -15,7 +15,6 @@ public class Decryption {
              Writer writer = new FileWriter(scanner.nextLine())) {
             int temp = scanner.nextInt();
             int key = temp <= lenght ? temp : temp - (lenght * (temp / lenght));
-            if (key <= 0) System.out.println("Ключ должен быть больше нуля");
             while (reader.ready()) {
                 int realLenght = reader.read(buffer);
                 for (int i = realLenght; i >= 0; i--) {
