@@ -32,12 +32,10 @@ public class Encryption {
                         }
                         next++;
                     }
-                    if (buffer[i] == 13) {
-                        reader.skip(1);
-                    } else if (buffer[i] == 10) {
-                        writer.write(10);
-                    } else {
-                        buffer[i] = ALPHABET[next + key];
+                    switch (buffer[i]) {
+                        case 13 -> reader.skip(1);
+                        case 10 -> writer.write(10);
+                        default -> buffer[i] = ALPHABET[next + key];
                     }
                 }
                 writer.write(buffer, 0, realLenght);
