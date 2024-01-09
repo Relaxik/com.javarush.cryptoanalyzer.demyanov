@@ -14,7 +14,7 @@ public class Encryption {
 
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
-        int next = 0;
+        int next;
         char[] buffer = new char[100000];
         try (Reader reader = new FileReader(scanner.nextLine());
              Writer writer = new FileWriter(scanner.nextLine())) {
