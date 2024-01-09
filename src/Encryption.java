@@ -5,8 +5,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Encryption {
-    static char newLine = 10;
-    static char newReturn = 13;
+
     private static final char[] ALPHABET = {'à', 'á', 'â', 'ã', 'ä', 'å', '¸', 'æ', 'ç',
             'è', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ð', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', '÷', 'ø', 'ù',
             'ú', 'û', 'ü', 'ý', 'þ', 'ÿ', '-', '.', ',', '«', '»', '"', '\'', ':', '!', '?', ' ', 'À',
@@ -33,7 +32,13 @@ public class Encryption {
                         }
                         next++;
                     }
-                    buffer[i] = ALPHABET[next + key];
+                    if (buffer[i] == 13) {
+                        reader.skip(1);
+                    } else if (buffer[i] == 10) {
+                        writer.write(10);
+                    } else {
+                        buffer[i] = ALPHABET[next + key];
+                    }
                 }
                 writer.write(buffer, 0, realLenght);
             }
