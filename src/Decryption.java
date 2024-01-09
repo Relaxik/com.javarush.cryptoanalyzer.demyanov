@@ -23,7 +23,7 @@ public class Decryption {
             if (key <= 0) System.out.println("Ключ должен быть больше нуля");
             while (reader.ready()) {
                 int realLenght = reader.read(buffer);
-                for (int i = realLenght-1; i >= 0; i--) {
+                for (int i = realLenght; i >= 0; i--) {
                     next = ALPHABET.length-1;
                     while (buffer[i] != ALPHABET[next]) {
                         if (next - key <= 0) {
@@ -32,12 +32,10 @@ public class Decryption {
                         }
                         next--;
                     }
-                    if (buffer[i] == 13) {
-                        reader.skip(1);
-                    } else if (buffer[i] == 10) {
-                        writer.write(10);
-                    } else {
-                        buffer[i] = ALPHABET[next - key];
+                    switch (buffer[i]) {
+                        case 13 -> reader.skip(1);
+                        case 10 -> writer.write(10);
+                        default -> buffer[i] = ALPHABET[next - key];
                     }
                 }
                 writer.write(buffer, 0, realLenght);
