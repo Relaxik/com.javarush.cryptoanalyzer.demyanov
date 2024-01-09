@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Decryption {
     static int lenght = Data.ALPHABET_LENGHT;
     static char[] alphabet = Data.ALPHABET;
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int next = 0;
         char[] buffer = new char[100000];
@@ -36,6 +36,8 @@ public class Decryption {
                 }
                 writer.write(buffer, 0, realLenght);
             }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

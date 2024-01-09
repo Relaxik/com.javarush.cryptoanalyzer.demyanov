@@ -1,2 +1,7 @@
 
-L	java:S106"+Replace this use of System.out by a logger.(äœòışÿÿÿÿ8œ¸óÎ1
+o
+java:S3776
+"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Çµí‘8Ííè÷Î1
+L	java:S106"+Replace this use of System.out by a logger.(äœòışÿÿÿÿ8×íè÷Î1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8Úíè÷Î1

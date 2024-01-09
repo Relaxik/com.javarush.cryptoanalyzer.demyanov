@@ -10,12 +10,14 @@ public class Encryption {
     static int next;
     static Scanner scanner = new Scanner(System.in);
     static char[] buffer = new char[100000];
-    public static void main(String[] args) throws IOException {
+    static int temp;
+    static int key;
 
+    public static void main(String[] args) {
         try (Reader reader = new FileReader(scanner.nextLine());
              Writer writer = new FileWriter(scanner.nextLine())) {
-            int temp = scanner.nextInt();
-            int key = temp <= lenght ? temp : temp - (lenght * (temp / lenght));
+            temp = scanner.nextInt();
+            key = temp <= lenght ? temp : temp - (lenght * (temp / lenght));
             while (reader.ready()) {
                 int realLenght = reader.read(buffer);
                 for (int i = 0; i < realLenght; i++) {
@@ -35,6 +37,8 @@ public class Encryption {
                 }
                 writer.write(buffer, 0, realLenght);
             }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
