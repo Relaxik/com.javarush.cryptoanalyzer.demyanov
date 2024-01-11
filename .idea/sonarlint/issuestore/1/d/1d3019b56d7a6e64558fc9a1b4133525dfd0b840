@@ -1,7 +1,18 @@
 
-o
-java:S3776
-"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Çµí‘8Ííè÷Î1
-L	java:S106"+Replace this use of System.out by a logger.(äœòışÿÿÿÿ8×íè÷Î1
+S
+java:S2696"6Make the enclosing method "static" or remove this set.(Ô÷ 8´¯óÉÏ1
+S
+java:S2696"6Make the enclosing method "static" or remove this set.(öëÿü8¦›ğÉÏ1
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(ŒòËÊÿÿÿÿÿ8¦›ğÉÏ1
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(‡…’êşÿÿÿÿ8¬›ğÉÏ1
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(õ½ÆÎüÿÿÿÿ8¯›ğÉÏ1
+L	java:S106!"+Replace this use of System.out by a logger.(Åî’¤ùÿÿÿÿ8Ó­ğÉÏ1
+L	java:S106#"+Replace this use of System.out by a logger.(øºÑûúÿÿÿÿ8áÙğÉÏ1
+]	java:S125&"<This block of commented-out lines of code should be removed.(»•ûÿÿÿÿ8ÿÈõÉÏ1
 O
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8Úíè÷Î1
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8º¯óÉÏ1
+P
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8º¯óÉÏ1

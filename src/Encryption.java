@@ -1,47 +1,46 @@
-
-
 import java.io.*;
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class Encryption {
-    static int lenght = Data.ALPHABET_LENGHT;
-    static char[] alphabet = Data.ALPHABET;
-    static int next;
-    static Scanner scanner = new Scanner(System.in);
-    static char[] buffer = new char[100000];
-    static int temp;
-    static int key;
 
-    public static void main(String[] args) {
-        try (Reader reader = new FileReader(scanner.nextLine());
-             Writer writer = new FileWriter(scanner.nextLine())) {
-            temp = scanner.nextInt();
-            key = temp <= lenght ? temp : temp - (lenght * (temp / lenght));
+
+    public String doEncrypt(String message) {
+        try (Reader reader = new FileReader(Data.fileReadPath);
+             Writer writer = new FileWriter(Data.fileWritePath)) {
+            Data.key = Data.temp <= Data.ALPHABET_LENGHT ? Data.temp : Data.temp - (Data.ALPHABET_LENGHT * (Data.temp / Data.ALPHABET_LENGHT));
             while (reader.ready()) {
-                int realLenght = reader.read(buffer);
+                int realLenght = reader.read(Data.buffer);
                 for (int i = 0; i < realLenght; i++) {
-                    next = 0;
-                    while (buffer[i] != alphabet[next]) {
-                        if (next + key >= lenght) {
-                            next = next + key - lenght;
+                    Data.next = 0;
+                    while (Data.buffer[i] != Data.ALPHABET[Data.next]) {
+                        if (Data.next + Data.key >= Data.ALPHABET_LENGHT) {
+                            Data.next = Data.next + Data.key - Data.ALPHABET_LENGHT;
                             break;
                         }
-                        next++;
+                        Data.next++;
                     }
-                    switch (buffer[i]) {
+                    switch (Data.buffer[i]) {
                         case 13 -> reader.skip(1);
                         case 10 -> writer.write(10);
-                        default -> buffer[i] = alphabet[next + key];
+                        default -> Data.buffer[i] = Data.ALPHABET[Data.next + Data.key];
                     }
                 }
-                writer.write(buffer, 0, realLenght);
+                writer.write(Data.buffer, 0, realLenght);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            e.printStackTrace(System.out);
         }
+
+
+        System.out.println(message);
+        return message;
     }
+    //    public static void main(String[] args) {
+//        Encryption encryption = new Encryption();
+//        encryption.doEncrypt("1");
+//    }
 }
+
+
 
 
 
