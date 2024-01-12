@@ -1,8 +1,7 @@
 
 
 import java.io.*;
-import java.util.Arrays;
-import java.util.Scanner;
+
 
 public class Decryption {
     public String doDecrypt(String message) {
@@ -12,18 +11,18 @@ public class Decryption {
             while (reader.ready()) {
                 int realLenght = reader.read(Data.buffer);
                 for (int i = realLenght; i >= 0; i--) {
-                    Data.next = Data.ALPHABET_LENGHT - 1;
-                    while (Data.buffer[i] != Data.ALPHABET[Data.next]) {
-                        if (Data.next - Data.key <= 0) {
-                            Data.next = Data.ALPHABET_LENGHT + Data.next - Data.key;
+                    Data.index = Data.ALPHABET_LENGHT - 1;
+                    while (Data.buffer[i] != Data.ALPHABET[Data.index]) {
+                        if (Data.index - Data.key <= 1) {
+                            Data.index = Data.ALPHABET_LENGHT+1 + Data.index - Data.key;
                             break;
                         }
-                        Data.next--;
+                        Data.index--;
                     }
                     switch (Data.buffer[i]) {
                         case 13 -> reader.skip(1);
                         case 10 -> writer.write(10);
-                        default -> Data.buffer[i] = Data.ALPHABET[Data.next - Data.key];
+                        default -> Data.buffer[i] = Data.ALPHABET[Data.index - Data.key];
                     }
                 }
                 writer.write(Data.buffer, 0, realLenght);

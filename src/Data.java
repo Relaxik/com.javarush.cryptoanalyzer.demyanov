@@ -1,5 +1,5 @@
 
-import java.io.*;
+
 import java.util.Scanner;
 
 public class Data {
@@ -11,15 +11,16 @@ public class Data {
 
     public static final int ALPHABET_LENGHT = ALPHABET.length;
     public static Scanner scanner = new Scanner(System.in);
-    public static int next;
+    public static int index;
     public static int key;
+    public static int temp;
     public static char[] buffer = new char[100000];
-    public static String fileReadPath ;
-    public static String fileWritePath;
+    public static String fileReadPath = null;
+    public static String fileWritePath = null;
     public static String success = "Файл успешно";
     public static String encrypt = " зашифрован";
     public static String decrypt = " дешифрован";
-    public static int temp;
+
 
 }
 

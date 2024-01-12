@@ -1,18 +1,15 @@
 
 S
-java:S2696"6Make the enclosing method "static" or remove this set.(Ô÷ 8´¯óÉÏ1
+java:S2696
+"6Make the enclosing method "static" or remove this set.(Ô÷ 8´¯óÉÏ1
+R
+java:S2696"6Make the enclosing method "static" or remove this set.(Ğ˜¸8–ßôÏ1
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(‡£Ÿ¤ùÿÿÿÿ8‚–ßôÏ1
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(áÂÜÒúÿÿÿÿ8ƒ–ßôÏ1
 S
-java:S2696"6Make the enclosing method "static" or remove this set.(öëÿü8¦›ğÉÏ1
-X
-java:S2696"6Make the enclosing method "static" or remove this set.(ŒòËÊÿÿÿÿÿ8¦›ğÉÏ1
-X
-java:S2696"6Make the enclosing method "static" or remove this set.(‡…’êşÿÿÿÿ8¬›ğÉÏ1
-X
-java:S2696"6Make the enclosing method "static" or remove this set.(õ½ÆÎüÿÿÿÿ8¯›ğÉÏ1
-L	java:S106!"+Replace this use of System.out by a logger.(Åî’¤ùÿÿÿÿ8Ó­ğÉÏ1
-L	java:S106#"+Replace this use of System.out by a logger.(øºÑûúÿÿÿÿ8áÙğÉÏ1
-]	java:S125&"<This block of commented-out lines of code should be removed.(»•ûÿÿÿÿ8ÿÈõÉÏ1
-O
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8º¯óÉÏ1
-P
-java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8º¯óÉÏ1
+java:S2696"6Make the enclosing method "static" or remove this set.(«û¹¥8¯›ğÉÏ1
+L	java:S106 "+Replace this use of System.out by a logger.(Åî’¤ùÿÿÿÿ8Ó­ğÉÏ1
+L	java:S106""+Replace this use of System.out by a logger.(øºÑûúÿÿÿÿ8áÙğÉÏ1
+]	java:S125%"<This block of commented-out lines of code should be removed.(»•ûÿÿÿÿ8ÿÈõÉÏ1
