@@ -11,12 +11,16 @@ public class Encryption {
                 for (int i = 0; i < realLenght; i++) {
                     Data.index = 0;
                     while (Data.buffer[i] != Data.ALPHABET[Data.index]) {
-                        if (Data.index + Data.key >= Data.ALPHABET_LENGHT-1) {
-                            Data.index = Data.index + Data.key - Data.ALPHABET_LENGHT;
+                        if (Data.index == Data.ALPHABET_LENGHT - 1) {
+                            Data.index = 0;
                             break;
                         }
                         Data.index++;
                     }
+                    if (Data.index + Data.key >= Data.ALPHABET_LENGHT) {
+                        Data.index = Data.index - Data.ALPHABET_LENGHT;
+                    }
+
                     switch (Data.buffer[i]) {
                         case 13 -> reader.skip(1);
                         case 10 -> writer.write(10);

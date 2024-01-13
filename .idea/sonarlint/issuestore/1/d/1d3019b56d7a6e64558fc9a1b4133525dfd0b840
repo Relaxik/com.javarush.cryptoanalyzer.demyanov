@@ -1,15 +1,14 @@
 
 S
 java:S2696
-"6Make the enclosing method "static" or remove this set.(Ô÷ 8´¯óÉÏ1
+"6Make the enclosing method "static" or remove this set.(Ô÷ 8À´˜Ğ1
 R
-java:S2696"6Make the enclosing method "static" or remove this set.(Ğ˜¸8–ßôÏ1
-X
-java:S2696"6Make the enclosing method "static" or remove this set.(‡£Ÿ¤ùÿÿÿÿ8‚–ßôÏ1
-X
-java:S2696"6Make the enclosing method "static" or remove this set.(áÂÜÒúÿÿÿÿ8ƒ–ßôÏ1
+java:S2696"6Make the enclosing method "static" or remove this set.(Ğ˜¸8Á´˜Ğ1
 S
-java:S2696"6Make the enclosing method "static" or remove this set.(«û¹¥8¯›ğÉÏ1
-L	java:S106 "+Replace this use of System.out by a logger.(Åî’¤ùÿÿÿÿ8Ó­ğÉÏ1
-L	java:S106""+Replace this use of System.out by a logger.(øºÑûúÿÿÿÿ8áÙğÉÏ1
-]	java:S125%"<This block of commented-out lines of code should be removed.(»•ûÿÿÿÿ8ÿÈõÉÏ1
+java:S2696"6Make the enclosing method "static" or remove this set.(Œ¨íî8Â´˜Ğ1
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(áÂÜÒúÿÿÿÿ8Â´˜Ğ1
+S
+java:S2696"6Make the enclosing method "static" or remove this set.(«û¹¥8Ã´˜Ğ1
+L	java:S106 "+Replace this use of System.out by a logger.(Åî’¤ùÿÿÿÿ8Ä´˜Ğ1
+L	java:S106""+Replace this use of System.out by a logger.(øºÑûúÿÿÿÿ8Å´˜Ğ1

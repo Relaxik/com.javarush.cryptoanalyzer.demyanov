@@ -20,6 +20,11 @@ public class Data {
     public static String success = "Файл успешно";
     public static String encrypt = " зашифрован";
     public static String decrypt = " дешифрован";
+    public static String chooseFile = "Выберите иходный файл";
+    public static String fileDeploy = "Выберите путь для сохранения файла";
+    public static String keySelect = "Выберите ключ";
+    public static String bruteForce = "Подбор завершен";
+
 
 
 }

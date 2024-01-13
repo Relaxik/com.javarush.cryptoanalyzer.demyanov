@@ -1,5 +1,4 @@
-import java.io.*;
-
+import java.util.spi.AbstractResourceBundleProvider;
 
 public class WorkPlace {
 
@@ -10,23 +9,39 @@ public class WorkPlace {
         System.out.println("Выберите действие\n" +
                 "1. Шифрование текста\n" +
                 "2. Дешифровка текста\n" +
-                "3. Подбор ключа (BruteForce)");
+                "3. Подбор ключа (BruteForce)\n" +
+                "0. Выход");
         int numberOfAction = Integer.parseInt(Data.scanner.nextLine());
-        System.out.println("Выберите иходный файл");
-        Data.fileReadPath = Data.scanner.nextLine();
-        System.out.println("Выберите путь для сохранения файла");
-        Data.fileWritePath = Data.scanner.nextLine();
-        System.out.println("Выберите ключ");
-        Data.temp = Integer.parseInt(Data.scanner.nextLine());
         switch (numberOfAction) {
-            case 1 -> encryption.doEncrypt(Data.success + Data.encrypt);
-            case 2 -> decryption.doDecrypt(Data.success + Data.decrypt);
-            case 3 -> bruteForce.doBruteForce(Data.success);
-
+            case 1 -> {
+                System.out.println(Data.chooseFile);
+                Data.fileReadPath = Data.scanner.nextLine();
+                System.out.println(Data.fileDeploy);
+                Data.fileWritePath = Data.scanner.nextLine();
+                System.out.println(Data.keySelect);
+                Data.temp = Integer.parseInt(Data.scanner.nextLine());
+                encryption.doEncrypt(Data.success + Data.encrypt);
+            }
+            case 2 -> {
+                System.out.println(Data.chooseFile);
+                Data.fileReadPath = Data.scanner.nextLine();
+                System.out.println(Data.fileDeploy);
+                Data.fileWritePath = Data.scanner.nextLine();
+                System.out.println(Data.keySelect);
+                Data.temp = Integer.parseInt(Data.scanner.nextLine());
+                decryption.doDecrypt(Data.success + Data.decrypt);
+            }
+            case 3 -> {
+                System.out.println(Data.chooseFile);
+                Data.fileReadPath = Data.scanner.nextLine();
+                bruteForce.doBruteForce(Data.bruteForce);
+            }default -> System.out.println("До свидания");
         }
-
     }
 }
+
+
+
 
 
 

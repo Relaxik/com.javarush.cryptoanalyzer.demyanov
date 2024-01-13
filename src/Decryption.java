@@ -11,10 +11,10 @@ public class Decryption {
             while (reader.ready()) {
                 int realLenght = reader.read(Data.buffer);
                 for (int i = realLenght; i >= 0; i--) {
-                    Data.index = Data.ALPHABET_LENGHT - 1;
+                    Data.index = Data.ALPHABET_LENGHT -1;
                     while (Data.buffer[i] != Data.ALPHABET[Data.index]) {
-                        if (Data.index - Data.key <= 1) {
-                            Data.index = Data.ALPHABET_LENGHT+1 + Data.index - Data.key;
+                        if (Data.index - Data.key <= 0) {
+                            Data.index = Data.ALPHABET_LENGHT + Data.index - Data.key;
                             break;
                         }
                         Data.index--;
@@ -34,9 +34,5 @@ public class Decryption {
         System.out.println(message);
         return message;
     }
-    //    public static void main(String[] args) {
-//        Decryption decryption = new Decryption();
-//        decryption.doDecrypt("se");
-//    }
 }
 
