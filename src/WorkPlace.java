@@ -1,5 +1,3 @@
-import java.util.spi.AbstractResourceBundleProvider;
-
 public class WorkPlace {
 
     public static void main(String[] args) {

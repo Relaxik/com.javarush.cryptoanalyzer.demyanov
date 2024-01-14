@@ -3,13 +3,11 @@ n
 java:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ø˜¤8’ìÆĞ1
 X
 java:S2696"6Make the enclosing method "static" or remove this set.(¿¬Æğüÿÿÿÿ8›ìÆĞ1
-X
-java:S2696"6Make the enclosing method "static" or remove this set.(¿¬Æğüÿÿÿÿ8Æ…’ÆĞ1
 S
-java:S2696"6Make the enclosing method "static" or remove this set.(ª§„„8Ç…’ÆĞ1
+java:S2696"6Make the enclosing method "static" or remove this set.(ª§„„8Ç…’ÆĞ1
 X
-java:S2696"6Make the enclosing method "static" or remove this set.(©’£õûÿÿÿÿ8Ç…’ÆĞ1
+java:S2696"6Make the enclosing method "static" or remove this set.(©’£õûÿÿÿÿ8Ç…’ÆĞ1
 S
-java:S2696"6Make the enclosing method "static" or remove this set.(å”»½8ìÆĞ1
-L	java:S106!"+Replace this use of System.out by a logger.(Åî’¤ùÿÿÿÿ8ŸìÆĞ1
-L	java:S106$"+Replace this use of System.out by a logger.(øºÑûúÿÿÿÿ8 ìÆĞ1
+java:S2696"6Make the enclosing method "static" or remove this set.(å”»½8ìÆĞ1
+L	java:S106 "+Replace this use of System.out by a logger.(Åî’¤ùÿÿÿÿ8ŸìÆĞ1
+L	java:S106#"+Replace this use of System.out by a logger.(øºÑûúÿÿÿÿ8 ìÆĞ1

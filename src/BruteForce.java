@@ -12,7 +12,6 @@ public class BruteForce {
                         Data.index = 0;
                         while (Data.buffer[i] != Data.ALPHABET[Data.index]) {
                             if (Data.index == Data.ALPHABET_LENGHT - 1) {
-                                Data.index = 0;
                                 break;
                             }
                             Data.index++;

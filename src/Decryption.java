@@ -11,11 +11,12 @@ public class Decryption {
                 for (int i = realLenght; i >= 0; i--) {
                     Data.index = Data.ALPHABET_LENGHT -1;
                     while (Data.buffer[i] != Data.ALPHABET[Data.index]) {
-                        if (Data.index - Data.key <= 0) {
-                            Data.index = Data.ALPHABET_LENGHT + Data.index - Data.key;
+                        if (Data.index == 0) {
                             break;
                         }
                         Data.index--;
+                    } if (Data.index - Data.key < 0) {
+                       Data.index = Data.ALPHABET_LENGHT + Data.index;
                     }
                     switch (Data.buffer[i]) {
                         case 13 -> reader.skip(1);
@@ -25,7 +26,6 @@ public class Decryption {
                 }
                 writer.write(Data.buffer, 0, realLenght);
             }
-
         } catch (IOException e) {
             e.printStackTrace(System.out);
         }
