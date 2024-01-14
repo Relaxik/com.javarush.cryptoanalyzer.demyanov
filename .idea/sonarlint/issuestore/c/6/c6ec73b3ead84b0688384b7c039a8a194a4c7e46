@@ -1,17 +1,15 @@
 
-e
-java:S2095
-"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(¢•…ì8µßÀôÏ1
 n
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ø˜¤8ÏÇµôÏ1
-]	java:S125"<This block of commented-out lines of code should be removed.(³²©áþÿÿÿÿ8ÓÇµôÏ1
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ø˜¤8’ìÆÐ1
 X
-java:S2696"6Make the enclosing method "static" or remove this set.(¿¬Æðüÿÿÿÿ8ÕÇµôÏ1
+java:S2696"6Make the enclosing method "static" or remove this set.(¿¬Æðüÿÿÿÿ8›ìÆÐ1
 X
-java:S2696"6Make the enclosing method "static" or remove this set.(¿¬Æðüÿÿÿÿ8ÖÇµôÏ1
+java:S2696"6Make the enclosing method "static" or remove this set.(¿¬Æðüÿÿÿÿ8Æ…’ÆÐ1
 S
-java:S2696"6Make the enclosing method "static" or remove this set.(ª§„„8ÖÇµôÏ1
+java:S2696"6Make the enclosing method "static" or remove this set.(ª§„„8Ç…’ÆÐ1
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(©’£õûÿÿÿÿ8Ç…’ÆÐ1
 S
-java:S2696"6Make the enclosing method "static" or remove this set.(­²°¶8ØÇµôÏ1
-L	java:S106 "+Replace this use of System.out by a logger.(Åî’¤ùÿÿÿÿ8ÙÇµôÏ1
-L	java:S106""+Replace this use of System.out by a logger.(øºÑûúÿÿÿÿ8ÚÇµôÏ1
+java:S2696"6Make the enclosing method "static" or remove this set.(å”»½8ìÆÐ1
+L	java:S106!"+Replace this use of System.out by a logger.(Åî’¤ùÿÿÿÿ8ŸìÆÐ1
+L	java:S106$"+Replace this use of System.out by a logger.(øºÑûúÿÿÿÿ8 ìÆÐ1

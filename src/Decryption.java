@@ -1,7 +1,5 @@
 
-
 import java.io.*;
-
 
 public class Decryption {
     public String doDecrypt(String message) {
